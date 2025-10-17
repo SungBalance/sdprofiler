@@ -1,0 +1,16 @@
+# Python cache files
+__pycache__/
+*.__pycache__/
+*.py[cod]
+*$py.class
+
+# Nvidia Nsight Systems profiling files
+*.nsys-rep
+*.sqlite
+*.qdrep
+
+# Python package
+*.egg-info/
+sdprofiler.egg-info/
+
+_cached_data/
