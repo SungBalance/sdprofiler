@@ -11,7 +11,7 @@ export RAY_DEDUP_LOGS=0
 
 export TORCH_USE_CUDA_DSA=0
 
-HF_MODEL_TOKEN=None="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"
+HF_MODEL_TOKEN=None
 
 MODEL_CACHE_DIR="/data/models"
 

@@ -16,7 +16,7 @@ MAX_PROMPT_LEN=256
 MIN_NEW_TOKENS=64
 MAX_NEW_TOKENS=3584
 
-HF_MODEL_TOKEN=None=None
+HF_MODEL_TOKEN=None
 
 DATASET_NAME=("specbench--multiturn" "specbench--translation" "specbench--summarization" "specbench--qa" "specbench--math_reasoning" "specbench--rag")
 # DATASET_NAME=("specbench--rag")
@@ -60,7 +60,7 @@ for max_batch in ${NUM_MAX_BATCH_REQUESTS[@]}; do
                         --static_batch_profile \
                         --use_chunked_prefill \
                         --use_cuda_graph \
-                        --hf_model_token ${HF_MODEL_TOKEN=None}"
+                        --hf_model_token ${HF_MODEL_TOKEN}"
 
                 
                 AR_ARGS="--model_name_or_path ${MODEL_NAME_OR_PATH} \
